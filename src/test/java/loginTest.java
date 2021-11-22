@@ -11,8 +11,8 @@ public class loginTest {
     public static void firstTest() {
         System.setProperty("webdriver.chrome.driver", "src/test/file/chromedriver");
         WebDriver driver = new ChromeDriver();
-        driver.get("https://fm-dev-ora.dev.strands.com/fm-api/logout.action");
-        driver.findElement(By.name("username")).sendKeys("userBFM5");
+        driver.get("facebook.com");
+        driver.findElement(By.name("user")).sendKeys("");
         driver.findElement(By.name("submit")).submit();
         Assert.assertEquals(2,2);
         driver.close();
